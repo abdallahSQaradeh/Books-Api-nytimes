@@ -1,4 +1,4 @@
-const key=config.key;
+const key=API_key;
 let input = document.getElementById('books-search');
 let search_result = document.getElementsByClassName('search-result')[0];
 let l_names=[];
