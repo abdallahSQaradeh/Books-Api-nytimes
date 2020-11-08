@@ -1,0 +1,53 @@
+@import "mixin.scss";
+@import "variables.scss";
+@import "./books/books.scss";
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    background-color: $l-paje;
+    
+    .navigation{
+        position:sticky;
+        top:0;
+        left:0;
+        width: 100%;
+        z-index: 15;
+
+        
+    
+        .subject{
+            @include center;
+            width:100%;
+            list-style-type: none;
+            li{
+                width:(100%/4);
+                @include center;
+                padding:20px 10px;
+            }
+        }
+    
+    }
+    .scrolled{
+        background-color: $d-paje;
+        border-bottom: 3px solid $l-paje;
+        border-top: 3px solid $l-paje;
+        width:95%;
+        margin: auto;
+    
+    }
+    .footer{
+        height:150px;
+        width:100%;
+       
+        
+        bottom: 0;;
+        @include center;
+        
+    }
+}
