@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navigation">
+        <ul class="subject">
+            <li class="books">Books</li>
+            <li class="articles">Articles</li>
+            <li class="movies">Movies</li>
+            <li class="Stories">Stories</li>
+            
+        </ul>
+    </nav>
+    <!----------------------------------Boooks--------------------------------------------------->
+    <section class="books">
+        <div class="books-search-field">
+            <input onkeydown="search()" onkeyup="undoSearch()" type="search" name="books-search" id="books-search">
+            <ion-icon name="search-outline" class="search-icon" onclick="tryApi()"></ion-icon>
+            <ul class="search-result">
+
+            </ul>
+        </div>
+        
+        <ul class="books-list">
+
+        </ul>
+        </div>
+
+        </div>
+        </div>
+        </div>
+
+        </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <p>
+
+        </p>
+    </footer>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/books.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+</body>
+
+</html>
